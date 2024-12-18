@@ -1,0 +1,390 @@
+body {
+    background-image: linear-gradient( 109.6deg,  rgb(185, 40, 190) 11.2%, rgba(87,27,226,1) 96.7% );
+}
+
+/* Diseño general */
+body {
+    background-image: linear-gradient(109.6deg, rgb(94, 18, 97) 11.2%, rgba(87,27,226,1) 96.7%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 16px;
+    transition: background-color 0.6s ease-in-out;
+    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+   /*background-color: rgba(255, 255, 255, 0.2);*/
+    border-radius: 5px;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5), 
+              0 0 25px 15px rgba(0, 0, 0, 0.2); /* Resplandor blanco y sombra */
+}
+
+
+/* Secciones principales */
+main section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+main section p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #f5f5f5;
+}
+
+.proyecto {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    flex-direction: row; /* Alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuir espacio uniformemente */
+    align-items: center; /* Alinear elementos verticalmente al centro */
+}
+
+.proyecto h3 {
+    color: #fff;
+}
+
+.proyecto p {
+    color: #f0f0f0;
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #571be2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.proyecto a:hover {
+    background-color: #e46be8;
+}
+
+/*ICONO PROYECTO*/
+
+.icono-proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: rgba(87, 27, 226, 0.8);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#contacto p {
+    color: #f0f0f0;
+    font-size: 1.3em;
+}
+
+
+.sobre-me{
+    display: block;
+}
+
+
+/*CONFIGURACION DE IMAGEN DE PERFIL*/
+
+.mi-profile{
+    position: relative;
+  width: 190px;
+  height: 254px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 12px;
+
+  width: 300px;
+  height: auto;
+  border-radius: 10px; /*BORDES REDONDEADOS PAI*/
+  box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5), 
+              0 0 25px 15px rgba(0, 0, 0, 0.2); /* Resplandor blanco y sombra */
+}
+
+.mi-profile:hover{
+    transform: translateY(-20px);
+   
+    
+}
+
+
+/*----------------------------CONFIGURACION DE PAGINA CONTACTO---------------------*/
+
+
+.form-contacto {
+    max-width: 500px; /* Ajusta el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    padding: 20px;
+    background-color: #8d2491; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px;
+}
+
+.form-contacto label {
+    display: block; /* Asegura que las etiquetas ocupen toda la línea */
+    margin-bottom: 8px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Negrita en las etiquetas */
+}
+
+.form-contacto input[type="text"] {
+    width: 100%; /* Hace que los inputs ocupen todo el ancho disponible */
+    padding: 10px;
+    margin-bottom: 20px; /* Espacio entre inputs */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+}
+
+.form-contacto input[type="text"]:focus {
+    border-color: #007BFF; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra en el borde al enfocar */
+    outline: none; /* Elimina el borde exterior de enfoque predeterminado */
+}
+
+.button-enviar{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.button-enviar:hover{
+    background-color: #eb38f1;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+/*SECCION CONTACTO EN PAGINA DE INICIO-----------------------------------------------*/
+
+.enlaces-con { 
+    display: flex; 
+    flex-direction: inherit;
+    gap: 5px;
+    justify-content: center;
+    /* Opcional: alinear a la izquierda */ } 
+.enlaces-con a { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin-bottom: 10px; /* Espacio entre los botones */ 
+    font-size: 16px; color: #fff; 
+    background-color: #9b57c2;
+     text-decoration: none; 
+     border-radius: 4px; 
+     transition: background-color 0.3s; 
+    } 
+    .enlaces-con a:hover { 
+        background-color: #e8eff7;
+        color: #69007f;
+     }
+
+
+
+
+
+
+
+
+
+/* Pie de página -------------------------------------------------------- */
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+
+.mi-profile{
+    width: 275px;
+    height: 275px;
+    border: none;
+    
+}
+
+img {
+    border: solid;
+    border-color: #f5eef5;
+    
+    height: 100px;
+}
+
+section div .img2{
+    height: 100px;
+}
+
+.diplo {
+    display: flex;
+    flex-direction: column; /* Esto alinea las imágenes en una columna */
+    align-items: center; /* Esto centra las imágenes horizontalmente */
+    
+  }
+  
+  .diplomas1, .diplomas2, .diplomas3 {
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+    height: 95vh;
+    margin-top: 20px;
+  }
+  
+
+
+  /*----------------MEDIA     QUERYES SOBRE RESPONSIVIDAD-------------------*/
+
+  /* Estilos para móviles (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Reduce el tamaño del título */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia los enlaces a una columna */
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Añade espacio entre enlaces */
+    }
+
+    .sobre-me {
+        text-align: center;
+    }
+
+    .mi-profile {
+        width: 200px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+    }
+
+    .proyecto {
+        flex-direction: column; /* Cambia a diseño vertical */
+        text-align: center;
+    }
+
+    .proyecto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .enlaces-con {
+        flex-direction: column; /* Cambia los enlaces de contacto a columna */
+        gap: 10px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+/* Estilos para tablets (pantallas de hasta 1024px de ancho) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5em; /* Ajusta ligeramente el tamaño del título */
+    }
+
+    .sobre-me {
+        gap: 15px;
+        flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    }
+
+    .proyecto {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center;
+    }
+
+    .proyecto img {
+        width: 80%; /* Reduce ligeramente el tamaño de la imagen */
+    }
+
+    .enlaces-con a {
+        font-size: 1em; /* Ajusta el tamaño del texto de los enlaces */
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Estilos para pantallas grandes (PC, más de 1024px de ancho) */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 3.5em; /* Maximiza el título en pantallas grandes */
+    }
+
+    .proyecto {
+        flex-direction: row; /* Mantén el diseño horizontal */
+    }
+
+    .proyecto img {
+        width: 50%; /* Ajusta las imágenes proporcionalmente */
+    }
+
+    .mi-profile {
+        width: 275px;
+        height: 275px;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+}
+
